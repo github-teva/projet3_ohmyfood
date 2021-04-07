@@ -1,3 +1,52 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #15DEA5;
@@ -335,23 +384,34 @@ button {
   text-align: center;
 }
 .header_town .localisation p {
-  display: flex;
   font-weight: bold;
-  height: 1em;
+  height: 2em;
   margin-top: 0px;
   margin-right: 0px;
   margin-left: 0px;
   margin-bottom: 25px;
 }
+.header_town .localisation p i {
+  margin-right: 15px;
+}
 .header_town .localisation p strong {
   font-weight: 900;
-  font-size: 17px;
+  font-size: 35px;
   text-align: center;
+  margin-right: 35px;
+  margin-bottom: 30px;
 }
 
-.booking {
-  background-color: grey;
-  text-align: center;
+.booking .btn {
+  margin: 0 auto;
+  display: block;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  background-color: #9356DC;
+  font-size: 20px;
+  border: none;
+  color: #fff;
 }
 .booking h2.reserve_title {
   color: black;
@@ -360,25 +420,14 @@ button {
   padding-top: 25px;
   text-align: center;
 }
-.booking h2.reserve_title .explore {
-  font-size: 50px;
-}
-.booking h2.reserve_title .explore p {
+.booking p {
   font-size: 10px;
   color: black;
   text-align: center;
 }
-.booking .btn {
-  text-align: center;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
-  background-color: #9356DC;
-  margin-bottom: 1em;
-}
 
-.test {
-  color: blue;
+.operation {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
