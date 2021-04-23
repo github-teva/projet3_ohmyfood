@@ -365,7 +365,7 @@ button {
   padding-top: 0px;
   height: 4em;
   text-align: center;
-  background-color: #fafafa;
+  background-color: #fffdfd;
 }
 .header .header_logo {
   font-family: "Shrikhand";
@@ -383,6 +383,7 @@ button {
   align-items: center;
   color: #0e0e14;
   justify-content: center;
+  padding-bottom: 20px;
 }
 .header_town .localisation p {
   height: 1.3em;
@@ -406,7 +407,7 @@ button {
 }
 
 .booking {
-  background-color: grey;
+  background-color: #f5f5f5;
   height: 7em;
 }
 .booking .btn {
@@ -416,13 +417,17 @@ button {
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
-  background-color: #9356DC;
+  background: linear-gradient(#ff79da, #9356dc);
+  box-shadow: 0 5px 15px 0 #c3c3c3;
   font-size: 20px;
   border: none;
   color: #fff;
 }
+.booking .btn_hover {
+  background: linear-gradient(#9356dc, #ff79da);
+}
 .booking .btn:hover {
-  background-color: peru;
+  background-color: #f5f5f5;
 }
 .booking h2.reserve_title {
   color: black;
@@ -440,6 +445,34 @@ button {
 
 .operation {
   text-align: left;
+}
+.operation .heading {
+  color: black;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.the_steps {
+  counter-reset: compteListe;
+}
+
+.a_step {
+  height: 70px;
+  margin: 1rem 0 1rem 0.75rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
+  border-radius: 1.25rem;
+  width: 15%;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  flex-direction: row;
+  float: left;
+  margin-left: 265px;
 }
 
 /*# sourceMappingURL=style.css.map */
