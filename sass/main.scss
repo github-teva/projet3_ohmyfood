@@ -24,15 +24,21 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 
+#main_wrapper
+{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0px;
+}
 
 .header{
   display: block;
   font-size: 11.8px;
   padding-left: 0px;
-  padding-right: 5px;
+  padding-right: 0px;
   padding-bottom: 0px;
   padding-top: 0px;
-  height: 4em;
+  height: 50px;
   text-align: center;
   background-color: rgb(255, 253, 253);
   .header_logo{
@@ -41,7 +47,7 @@ $color-tertiary: #99E2D0;
     font-size: 27px;
     box-shadow: 0px 5px 5px rgb(146, 144, 144);
     color:rgb(14, 14, 20);
-    margin-top: 0rem;
+    margin-top: 15px;
   }
 }
 
@@ -89,10 +95,10 @@ $color-tertiary: #99E2D0;
     border-radius: 50px; 
     background: linear-gradient(#ff79da, #9356dc);
     box-shadow: 0 5px 15px 0 #c3c3c3;
-    
-
-    &_hover{
-      background: linear-gradient(#9356dc,#ff79da);
+    transition: 0.2s;
+    &:hover{
+      background: linear-gradient(#5c5664,#7a5a71);
+      color: blue;
     }
    font-size: 20px;
    border: none;
@@ -124,28 +130,152 @@ $color-tertiary: #99E2D0;
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 25px;
-text-align: center;
+    text-align: center;
   }
 }
 
 .the_steps
 {
-    counter-reset: compteListe;
+    display: flex;
 }
+
 .a_step
 {
     height: 70px;
-    margin: 1rem 0 1rem .75rem;
     box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
     border-radius: 1.25rem;
-    width: 15%;
-    background-color: #f6f6f6;
+    width: 20%;
+    background-color: #f5f5f5;
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 15px;
     flex-direction: row;
-    float: left;
-    margin-left:265px;
+    margin:auto;
+    .number_step
+ {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: -50px;
+   margin-right: 50px;
+   color: #fff;
+   height: 25px;
+   width: 25px;
+   background-color: #9356dc;
+   border: 1px solid #9356dc;
+   border-radius: 100px 100px 100px 100px;
+   font-size: 15px;
+ }
+    a {
+      text-decoration: none;
+      color: black;
+      i{
+        margin-right: 50px;
+      }
+    }
+  
 }
+
+figure .new-flag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #fff;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  padding: 5px;
+}
+
+.restaurants
+{
+  background-color: #f4f4f4;
+}
+
+.list-restaurants {
+  display: flex;
+  margin-left:60px;
+}
+
+figure {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  position: relative;
+  .new-flag
+  {
+    position: absolute;
+    top: 0; 
+    right:0;
+    margin-top:15px;
+    margin-right: 15px;
+    background-color:#99e2d0;
+    font-weight: bold;
+  }
+}
+
+.img_restaurant {
+  width: 100%;
+  height: 55%;
+  max-width: 275px;
+  border-radius: 20px 20px 0px 0px;
+  margin: 0;
+  padding: 0;
+}
+
+figcaption div {
+  position: relative;
+  
+}
+
+figcaption {
+  position: relative;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 1px 2px 8px #bdbdbd;
+.icon-heart{
+  position: absolute;
+  right: 0;
+  bottom: 25px;
+  margin-right:15px;
+  font-size: 25px;
+}
+}
+  p{
+    margin-left: 15px;
+    color: #000;
+    font-size:19px;
+  }
+
+
+h2.list {
+  color: black;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-left: 60px;
+  font-size: bold;
+}
+
+figure
+{
+  position: relative;
+  .new-flag
+  {
+    position: absolute;
+    top: 0; 
+    right:0;
+  }
+}
+
+h3.list
+{
+ color: #000;
+ font-weight: bold;
+ font-size: 20px;
+ font-family: "Roboto", sans-serif;
+ margin-top: 20px;
+ margin-left:15px;
+}
+
+
 
